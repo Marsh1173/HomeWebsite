@@ -4,6 +4,7 @@
 @textColor: rgb(68, 68, 68);
 @lightTextColor: rgb(102, 102, 102);
 @fadeInAnimation: fadeInFromNone 0.1s ease-out;
+@longFadeInAnimation: fadeInFromNone 0.5s ease-out;
 
 .OverView {
 }
@@ -27,6 +28,13 @@
     font-weight: 200;
     color: @lightTextColor;
     margin-bottom: 2rem;
+}
+
+.longFadeInDiv {
+    -webkit-animation: @longFadeInAnimation;
+    -moz-animation: @longFadeInAnimation;
+    -o-animation: @longFadeInAnimation;
+    animation: @longFadeInAnimation;
 }
 
 .fadeInDiv {

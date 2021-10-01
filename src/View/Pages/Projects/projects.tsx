@@ -15,7 +15,7 @@ export class ProjectsComponent extends Component<{}> {
         return (
             <div className="ProjectsDiv">
                 <h1>Projects</h1>
-                <h2>WARNING: Links do not currently work.</h2>
+                <h2>WARNING: Block Game's server is not currently up. Check back in a day or two.</h2>
                 <div className="projectContainer">{projectElems}</div>
             </div>
         );

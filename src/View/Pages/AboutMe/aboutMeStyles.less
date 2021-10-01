@@ -17,13 +17,11 @@
     transition: all 0.1s;
 }
 
-.AboutMeDiv a:hover,
-.AboutMeDiv button:hover {
+.AboutMeDiv a:hover {
     background-color: rgba(0, 0, 0, 0.137);
     cursor: pointer;
 }
-.AboutMeDiv a:active,
-.AboutMeDiv button:active {
+.AboutMeDiv a:active {
     background-color: rgba(0, 0, 0, 0.192);
     color: rgb(110, 17, 0);
 }
@@ -35,4 +33,13 @@
 
 .AboutMeDiv h2:hover #copyText {
     color: rgba(53, 53, 53, 0.295);
+}
+
+.email button {
+    -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text; /* Safari */
+    -khtml-user-select: text; /* Konqueror HTML */
+    -moz-user-select: text; /* Old versions of Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }

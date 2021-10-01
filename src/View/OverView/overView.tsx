@@ -19,7 +19,7 @@ export const OverView: React.FC<{}> = () => {
     };
 
     return (
-        <div className="OverView">
+        <div className="OverView longFadeInDiv">
             <HeaderComponent changePage={changePage}></HeaderComponent>
             <NewsSlider></NewsSlider>
             <div className="pageContainer">
