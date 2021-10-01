@@ -1,0 +1,71 @@
+@headerHeight: 4rem;
+@newsHeight: 15rem;
+@border: 1px solid rgb(146, 146, 146);
+@textColor: rgb(68, 68, 68);
+@lightTextColor: rgb(102, 102, 102);
+@fadeInAnimation: fadeInFromNone 0.1s ease-out;
+
+.OverView {
+}
+
+.pageContainer {
+    width: 100%;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pageContainer h2,
+.pageContainer p {
+    color: @textColor;
+    margin-bottom: 2rem;
+}
+
+.pageContainer h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: @lightTextColor;
+    margin-bottom: 2rem;
+}
+
+.fadeInDiv {
+    -webkit-animation: @fadeInAnimation;
+    -moz-animation: @fadeInAnimation;
+    -o-animation: @fadeInAnimation;
+    animation: @fadeInAnimation;
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}

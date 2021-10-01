@@ -1,11 +1,6 @@
 import React, { Component, createElement } from "react";
 import ReactDOM from "react-dom";
-
-class MainDiv extends Component<{}, {}> {
-    render() {
-        return <p>hi</p>;
-    }
-}
+import { OverView } from "../View/OverView/overView";
 
 const domContainer = document.querySelector("#reactDom");
-ReactDOM.render(createElement(MainDiv), domContainer);
+ReactDOM.render(createElement(OverView), domContainer);

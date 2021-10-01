@@ -1,0 +1,50 @@
+@import "../../OverView/overViewStyles.less";
+
+.HeaderComponent {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+
+    width: 100vw;
+    height: @headerHeight;
+    background: linear-gradient(rgb(221, 221, 221), rgb(189, 189, 189));
+
+    padding: 0.5rem;
+
+    display: flex;
+    border-bottom: @border;
+
+    z-index: 2;
+}
+
+.HeaderComponent button {
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 1rem;
+
+    padding: 0.5rem;
+
+    font-size: 1.7rem;
+    color: @textColor;
+
+    transition: all 0.1s;
+}
+
+.HeaderComponent button:hover {
+    background-color: @hoverColor;
+    border: 2px solid rgba(0, 0, 0, 0.226);
+}
+
+.HeaderComponent button:active {
+    background-color: @activeColor;
+}
+
+.HeaderComponent button.currentPage {
+    background-color: @hoverColor;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+@activeColor: rgba(212, 212, 212, 0.493);
+@hoverColor: rgba(255, 255, 255, 0.911);

@@ -1,0 +1,48 @@
+@componentWidth: 15rem;
+@componentHeight: 20rem;
+
+.ProjectComponent {
+    min-width: @componentWidth;
+    min-height: @componentHeight;
+    border: 2px solid rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+
+    transition: all 0.1s;
+}
+.ProjectComponent:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+    border: 2px solid rgba(255, 255, 255, 0.952);
+}
+
+.ProjectComponent a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.ProjectComponent a p {
+    height: 1rem;
+    margin: none;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.image {
+    width: @componentWidth;
+    height: @componentWidth;
+    border-radius: 5px;
+    overflow: hidden;
+}
